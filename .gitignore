@@ -1,0 +1,58 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+
+# 환경변수 / 로컬 시크릿 — 절대 커밋 금지
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+*.local
+# `.env.example` 만 커밋 (placeholder 만 들어 있음).
+!.env.example
+
+# 로컬 전용 (Python venv / 캐시 / 시크릿 파일)
+backend/.venv/
+backend/__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 키 파일 (어떤 경로에 두든 실수로라도 커밋되지 않게)
+secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_rsa.pub
+ems_llm_api_key
+ems_llm_api_key.txt
+
+# 내부 비공개 운영 문서
+private/
+
+# Claude / IDE 로컬 설정
+.claude/settings.local.json
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
